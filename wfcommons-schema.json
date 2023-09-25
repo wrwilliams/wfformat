@@ -27,7 +27,8 @@
         "1.1",
         "1.2",
         "1.3",
-        "1.4"
+        "1.4",
+        "1.5"
       ]
     },
     "wms": {
@@ -296,7 +297,16 @@
                 "description": "Machine name used",
                 "type": "string",
                 "minLength": 1
-              }
+              },
+              "launchDir": {
+                "description": "Directory in which the process was executed",
+                "type": "string",
+                "minLength": 1
+              },
+              "startTime": {
+                "description": "Task execution start timestamp",
+                "type": "string",
+                "minLength": 1
             },
             "required": [
               "name",
